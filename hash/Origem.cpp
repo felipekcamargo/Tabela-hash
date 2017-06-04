@@ -39,7 +39,7 @@ int main()
 	cin >> tam;
 	
 	int *tabela = new int[tam];
-	int *vetor = new int[];
+	//int *vetor = new int[];
 	
 	limpa_tabela(tabela, tam);
 	

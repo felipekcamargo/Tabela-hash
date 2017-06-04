@@ -1,16 +1,16 @@
-#include <iostream>
+ #include <iostream>
 
 using namespace std;
 
 struct lista
 {
-	int dado;				// ainda nao esta sendo utilizado
+	int dado;				// ainda nao esta sendo utilizado teste
 	lista *proximo;
 };
 
 void calc_arm_pos(int *t, int valor, int tam)
 {
-	int res_pos = valor % tam; // O valor do resto da divis„o È o valor que vai definir se a posiÁ„o do dado "funÁ„o hash"
+	int res_pos = valor % tam; // O valor do resto da divis√£o √© o valor que vai definir se a posi√ß√£o do dado "fun√ß√£o hash"
 	if (t[res_pos] == 0)
 		t[res_pos] = valor;
 	else
@@ -19,11 +19,11 @@ void calc_arm_pos(int *t, int valor, int tam)
 		cout << "Posicao ja ocupada !";
 		
 	}
-		// Colocar um codigo que grave a posiÁ„o de outro vetor na tabela principal
+		// Colocar um codigo que grave a posi√ß√£o de outro vetor na tabela principal
 }
 
 
-void limpa_tabela(int *t, int tam)  // Limpa a tabela para que n„o seja impresso lixo no final
+void limpa_tabela(int *t, int tam)  // Limpa a tabela para que n√£o seja impresso lixo no final
 {
 	for (int c = 0; c < tam; c++)
 		t[c] = NULL;

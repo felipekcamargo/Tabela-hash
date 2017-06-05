@@ -4,27 +4,22 @@
 using namespace std;
 
 
-void calc_arm_pos(int *t, int valor, int tam)
+void calc_arm_pos(Lista *t, int valor, int tam)
 {
 	int res_pos = valor % tam; // O valor do resto da divisão é o valor que vai definir se a posição do dado "função hash"
-	if (t[res_pos] == 0)
-		t[res_pos] = valor;
-	else
-	{
-		int controle = t[res_pos];
-		
-		cout << "Posicao ja ocupada !";
-		
-	}
+	//if (t[res_pos] == 0)
+	//	t[res_pos] = valor;
+	//else
+	//{
+	//	int controle = t[res_pos];
+	//	
+	//	cout << "Posicao ja ocupada !";
+	//	
+	//}
+	insere_ordenado(t[res_pos], valor);
 		// Colocar um codigo que grave a posição de outro vetor na tabela principal
 }
 
-
-void limpa_tabela(Lista *t, int tam)  // Limpa a tabela para que não seja impresso lixo no final
-{
-	for (int c = 0; c < tam; c++)
-		t[c] = NULL;
-}
 
 
 int main()
@@ -36,9 +31,6 @@ int main()
 	cin >> tam;
 	
 	Lista *tabela = new Lista[tam];
-	//int *vetor = new int[];
-	
-	limpa_tabela(tabela, tam);
 	
 	while (resp ==	's' || resp == 'S')
 	{
@@ -50,8 +42,7 @@ int main()
 	}
 
 	for (int c = 0; c < tam; c++)
-		cout << endl <<"\t"<< tabela[c] << endl;
-
+		mostra_lista(tabela[c]);
 	
 	return 0;
 }

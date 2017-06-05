@@ -20,7 +20,7 @@ void calc_arm_pos(int *t, int valor, int tam)
 }
 
 
-void limpa_tabela(int *t, int tam)  // Limpa a tabela para que não seja impresso lixo no final
+void limpa_tabela(Lista *t, int tam)  // Limpa a tabela para que não seja impresso lixo no final
 {
 	for (int c = 0; c < tam; c++)
 		t[c] = NULL;
@@ -35,7 +35,7 @@ int main()
 	cout << "Informe o tamanho da tabela: ";
 	cin >> tam;
 	
-	int *tabela = new int[tam];
+	Lista *tabela = new Lista[tam];
 	//int *vetor = new int[];
 	
 	limpa_tabela(tabela, tam);

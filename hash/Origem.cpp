@@ -16,6 +16,7 @@ void calc_arm_pos(int *t, int valor, int tam)
 	else
 	{
 		int controle = t[res_pos];
+		
 		cout << "Posicao ja ocupada !";
 		
 	}

@@ -1,12 +1,8 @@
 #include <iostream>
 
+
 using namespace std;
 
-struct lista
-{
-	int dado;				// ainda nao esta sendo utilizado
-	lista *proximo;
-};
 
 void calc_arm_pos(int *t, int valor, int tam)
 {

@@ -30,6 +30,6 @@ void mostra_lista(Lista& l);  //Imprime a lista
 
 int ultimo_elemento(Lista& l);  //Retorna o ultimo elemento da lista
 
-bool existeLista(Lista& l,int e) //Procura se existe o elemento e na lista
+bool existeLista(Lista& l, int e); //Procura se existe o elemento e na lista
 
 #endif // LISTA_H_INCLUDED
